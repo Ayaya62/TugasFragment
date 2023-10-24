@@ -25,32 +25,32 @@ class SigninFragment : Fragment() {
         with(binding) {
             val mainActivity = requireActivity() as MainActivity
             button.setOnClickListener {
-                val username1 = editTextUsername.text.toString()
-                val email1 = editTextEmail.text.toString()
-                val phone1 = editTextPhone.text.toString()
-                val password1 = editTextPassword.text.toString()
+                val username = editTextUsername.text.toString()
+                val email = editTextEmail.text.toString()
+                val phone = editTextPhone.text.toString()
+                val password = editTextPassword.text.toString()
 
-                if (username1.isEmpty() ||
-                    email1.isEmpty() ||
-                    phone1.isEmpty() ||
-                    password1.isEmpty()
+                if (username.isEmpty() ||
+                    email.isEmpty() ||
+                    phone.isEmpty() ||
+                    password.isEmpty()
                 ) {
                     makeText(
                         requireContext(),
-                        "Please fill out the credentials.",
+                        "Tolong isi data dengan tepat.",
                         Toast.LENGTH_SHORT
                     ).show()
                 } else if (
                     !checkboxTnc.isChecked
                 ){
                     makeText(requireContext(),
-                        "Please accept our Terms and Conditions.",
+                        "Cek box term and coditions.",
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
                     val bundle = Bundle()
-                    bundle.putString("username", username1)
-                    bundle.putString("password", password1)
+                    bundle.putString("username", username)
+                    bundle.putString("password", password)
 
                     val adapter = mainActivity.viewPager2.adapter as FragmentStateAdapter
                     val loginFragment = adapter.createFragment(1) as LoginFragment
@@ -58,7 +58,7 @@ class SigninFragment : Fragment() {
                     mainActivity.toLoginPage()
 
                     makeText(requireContext(),
-                        "You Are Registered!",
+                        "Telah Registrasi!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }

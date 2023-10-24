@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
     fun credentialIncorrectToast(credential:String){
         Toast.makeText(
             requireContext(),
-            "${credential} is incorrect",
+            "${credential} salah",
             Toast.LENGTH_SHORT
         ).show()
     }
