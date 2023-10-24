@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PPPBPertemuan8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hyperlink_logIn">
+        <u>Log In</u>
+    </string>
+    <string name="hyperlink_signIn">
+        <u>Register</u>
+    </string>
+    <string name="hyperlink_forgotpassword">
+        <u>Forgot Password?</u>
+    </string>
+    <string name="hyperlink_terms">
+        <u>Terms</u>
+    </string>
+    <string name="hyperlink_condition">
+        <u>Condition</u>
+    </string>
+
+</resources>
