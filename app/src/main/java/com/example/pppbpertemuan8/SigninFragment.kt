@@ -58,7 +58,7 @@ class SigninFragment : Fragment() {
                     mainActivity.toLoginPage()
 
                     makeText(requireContext(),
-                        "Telah Registrasi!",
+                        "Registrasi Berhasil",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
